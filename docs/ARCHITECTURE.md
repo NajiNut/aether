@@ -205,7 +205,7 @@ These details are documented separately under restricted access.
 
 ## 9. Summary
 
-Project Aether establishes a **deterministic control plane** for LLM interactions. By decoupling safety enforcement from model reasoning, the architecture ensures that security is a primary system state rather than an emergent property of the model.
+Aether establishes a **deterministic control plane** for LLM interactions. By decoupling safety enforcement from model reasoning, the architecture ensures that security is a primary system state rather than an emergent property of the model.
 
 Through this multi-stage approach:
 
