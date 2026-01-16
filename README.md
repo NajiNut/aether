@@ -12,6 +12,10 @@
 
 ---
 
+> **Project Status Note**  
+> Project Aether is maintained as a **reference architecture and design disclosure**.  
+> While the live demonstration backend was initially deployed using a transient n8n/FastAPI setup, the long-term value of this repository lies in its documented safety architecture, threat model, and governance patterns.
+
 ## Overview
 
 **Aether** is a low-latency **AI governance gateway** designed to enforce **security, compliance, and auditability** across enterprise LLM workflows.
@@ -210,4 +214,3 @@ Through its dual-gate architecture, Aether provides:
 * **Absolute Auditability:** A forensic-grade audit trail for every interaction, ensuring full transparency in AI decision-making.
 
 > **Aether treats AI safety as infrastructure — not prompt engineering.**
-
