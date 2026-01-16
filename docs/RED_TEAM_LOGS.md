@@ -74,7 +74,7 @@ Semantic intent is detected despite fictional framing.
 ---
 
 ### 4.3 Toxic & Abusive Language
-Due to modern Gemini models already enforcing strong output safety, toxic intent is primarily blocked at Gate-1.
+Due to modern Gemini models already enforcing strong output safety, toxic intent is primarily blocked at Gate-1.\
 Gate-2 enforcement is retained as a defense-in-depth backstop, not a primary control.
 
 | Test ID | Adversarial Input | Expected Outcome | Actual Result | Gate | Status |
