@@ -85,8 +85,8 @@ Each artifact corresponds to a **real execution** of the system.
 
 **Artifact**
 
-- Request blocked with `403 Forbidden`  
-  (`/docs/assets/enforcement_harmful.png`)
+- Request blocked with `403 Forbidden`
+  <video src="https://github.com/user-attachments/assets/c5112453-9429-4562-ab76-5849328907f0" width="100%" controls></video>
 
 **Demonstrates**
 
@@ -104,7 +104,7 @@ This confirms **pre-inference enforcement**.
 **Artifact**
 
 - Request containing sensitive PII blocked  
-  (`/docs/assets/enforcement_sensitive_pii.png`)
+  <video src="https://github.com/user-attachments/assets/c5112453-9429-4562-ab76-5849328907f0" width="100%" controls></video>
 
 **Demonstrates**
 
