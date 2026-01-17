@@ -139,8 +139,8 @@ This confirms **data minimization with forensic utility**, not data suppression.
 
 **Artifact**
 
-- Successful request execution (no block)  
-  (`/docs/assets/enforcement_safe.png`)
+- Successful request execution (no block)\
+  [View Video Evidence: Safe Prompt Enforcement](https://drive.google.com/file/d/1wyJDfmd1jRrjUO-0v7OE2WbXCRisHVf6/view?usp=sharing)
 
 **Demonstrates**
 
