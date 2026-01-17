@@ -106,6 +106,8 @@ Instead:
 
 Responsible disclosure is expected.
 
+>At present, no public vulnerability intake is provided; this guidance exists to set expectations for responsible disclosure should private reporting channels be added in the future.
+
 ---
 
 ## 7. Code of Conduct
