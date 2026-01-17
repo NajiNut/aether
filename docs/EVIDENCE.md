@@ -56,8 +56,8 @@ The goal is **control coverage**, not volume.
 
 **Artifact**
 
-- High-level workflow overview  
-  (`/docs/assets/workflow_overview.png`)
+- High-level workflow overview
+  ![Workflow Overview](/docs/assets/workflow_overview.png)
 
 **Demonstrates**
 
@@ -122,7 +122,7 @@ This confirms **privacy-first enforcement at the boundary**.
 **Artifact**
 
 - Audit log record showing redacted prompt  
-  (`/docs/assets/audit_log_row.png`)
+  ![Audit Log Row](/docs/assets/audit_log_row.png)
 
 **Demonstrates**
 
@@ -166,8 +166,8 @@ Each execution produces a **single immutable audit record** containing:
 
 **Artifact**
 
-- Single audit log row  
-  (`/docs/assets/audit_log_row.png`)
+- Audit log rows 
+  ![Audit Log Row](/docs/assets/audit_log_row.png)
 
 This demonstrates **traceability without excessive data retention**.
 
