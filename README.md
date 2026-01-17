@@ -89,12 +89,12 @@ Aether dynamically routes requests to balance **latency, cost, and reasoning dep
 ### Routing Logic
 
 #### Complexity Classification
-- Performed using **Gemini 2.5 Flash-Lite**
+- Performed using **Gemini 2.5 Flash-Lite (gemini-2.5-flash-lite)**
 - Evaluates intent and reasoning requirements
 
 #### Adaptive Model Routing
-- Simple / factual prompts → **Gemini 2.5 Flash**
-- Multi-step reasoning / complex tasks → **Gemini Flash-3 Preview**
+- Simple / factual prompts → **Gemini 2.5 Flash-Lite (gemini-2.5-flash-lite)**
+- Multi-step reasoning / complex tasks → **Gemini Flash-3 Preview (gemini-3-flash-preview)**
 
 #### Resilience & Rate-Limit Handling
 - Stateful retry counters
@@ -131,7 +131,7 @@ Aether maintains a **full AI safety audit trail**, functioning as a black-box re
 |------|------|-------------|
 | `id` | BIGINT | Primary key |
 | `created_at` | TIMESTAMPTZ | Event timestamp |
-| `user_prompt` | TEXT | Raw user input (for forensic review) |
+| `user_prompt` | TEXT | User input after selective PII redaction (for forensic review) |
 | `pii_detected` | JSONB | Detected & redacted PII entities |
 | `risk_level` | TEXT | Safety classification |
 | `model_used` | TEXT | Model routing decision |
@@ -152,7 +152,7 @@ Aether maintains a **full AI safety audit trail**, functioning as a black-box re
 - n8n (Workflow Automation)
 
 **LLMs**
-- Gemini 2.5 Flash-Lite  
+- Gemini 2.5 Flash-Lite
 - Gemini Flash-3 Preview  
 
 **Security & Safety**
