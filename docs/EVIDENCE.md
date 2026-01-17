@@ -58,6 +58,8 @@ The goal is **control coverage**, not volume.
 
 - High-level workflow overview
   ![Workflow Overview](/docs/assets/workflow_overview.png)
+  
+  >Figure 1: Orchestration Control Plane. This execution trace confirms the successful sequential enforcement of Gate-1 (Pre-inference PII/Risk) and Gate-2 (Post-inference Toxicity). The green node status indicators verify a complete, non-blocked path for a safe request.
 
 **Demonstrates**
 
@@ -88,6 +90,8 @@ Each artifact corresponds to a **real execution** of the system.
 - Request blocked with `403 Forbidden`
   <video src="https://github.com/user-attachments/assets/c5112453-9429-4562-ab76-5849328907f0" width="100%" controls></video>
 
+  >Figure 2: Fail-Closed Enforcement (Harmful Intent). Verification of immediate session termination upon detection of high-risk adversarial intent (Authority Impersonation + Dangerous Content). The request is intercepted at the edge, ensuring zero exposure to the LLM backend.
+
 **Demonstrates**
 
 - Harmful intent detected prior to model invocation
@@ -106,6 +110,8 @@ This confirms **pre-inference enforcement**.
 - Request containing sensitive PII blocked  
   <video src="https://github.com/user-attachments/assets/63787ceb-5a49-477b-ba84-345b4ab6ab19" width="100%" controls></video>
 
+  >Figure 3: Privacy Boundary Enforcement. Demonstration of a high-risk PII block. The system identifies a sensitive Credit Card pattern in-memory and triggers an automated rejection to prevent potential data exfiltration or model training leakage.
+
 **Demonstrates**
 
 - Sensitive PII detected in-memory
@@ -123,6 +129,8 @@ This confirms **privacy-first enforcement at the boundary**.
 
 - Audit log record showing redacted prompt  
   ![Audit Log Row](/docs/assets/audit_log_row.png)
+  
+  >Figure 4: Automated Data Minimization. Real-time verification of the system's ability to identify and redact non-sensitive PII (<PERSON>, <EMAIL_ADDRESS>) before data persistence. This demonstrates that semantic intent is preserved for operational utility while sensitive identifiers are scrubbed at the gateway level, satisfying strict data privacy requirements.
 
 **Demonstrates**
 
@@ -140,7 +148,10 @@ This confirms **data minimization with forensic utility**, not data suppression.
 **Artifact**
 
 - Successful request execution (no block)\
-  [View Video Evidence: Safe Prompt Enforcement](https://drive.google.com/file/d/1wyJDfmd1jRrjUO-0v7OE2WbXCRisHVf6/view?usp=sharing)
+  [![View Video Evidence: Safe Prompt Enforcement](/docs/assets/enforcement_safe.png)](https://drive.google.com/file/d/1wyJDfmd1jRrjUO-0v7OE2WbXCRisHVf6/view?usp=sharing)
+  *(Click the image above to watch the full execution on Google Drive)*
+
+  >Figure 5: Availability & Reliability Test. Confirmation of low false-positive impact. The system allows high-complexity cultural/historical queries to pass through both safety gates, maintaining full utility for benign users while monitoring telemetry in the background.
 
 **Demonstrates**
 
@@ -168,6 +179,8 @@ Each execution produces a **single immutable audit record** containing:
 
 - Audit log rows 
   ![Audit Log Row](/docs/assets/audit_log_row.png)
+  
+  >Figure 6: Immutable Forensic Record. Evidence of 'Privacy by Design' in the persistence layer. Note that the user_prompt is stored using <ENTITY> tags, while the risk_level and pii_detected metadata are preserved for security auditing without violating data minimization principles.
 
 This demonstrates **traceability without excessive data retention**.
 
