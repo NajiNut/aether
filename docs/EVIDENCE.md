@@ -141,6 +141,8 @@ This confirms **privacy-first enforcement at the boundary**.
 
 This confirms **data minimization with forensic utility**, not data suppression.
 
+>The same audit artifact is intentionally referenced again in Section 5 to demonstrate that a single immutable record simultaneously satisfies enforcement and forensic requirements.
+
 ---
 
 ### 4.4 Safe Input (Normal Execution Path)
@@ -183,6 +185,8 @@ Each execution produces a **single immutable audit record** containing:
   >Figure 6: Immutable Forensic Record. Evidence of 'Privacy by Design' in the persistence layer. Note that the user_prompt is stored using <ENTITY> tags, while the risk_level and pii_detected metadata are preserved for security auditing without violating data minimization principles.
 
 This demonstrates **traceability without excessive data retention**.
+
+> This artifact is intentionally reused from Section 4.3 to demonstrate that a single redacted audit record serves both enforcement validation and long-term forensic analysis.
 
 ---
 
